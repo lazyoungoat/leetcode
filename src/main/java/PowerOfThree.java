@@ -1,24 +1,22 @@
 public class PowerOfThree {
     public boolean isPowerOfThree(int n) {
-        return true;
+        for (int i = 0; i < 2; i++) {
+        }
 
+            return true;
     }
 
     int PP;
     int NP;
     public int pow(int a, int b) {
+        PP = 1;
         if (b > 0) {
             for (int j = 0; j < b; j++) {
-                PP = a * a;
+                PP = PP * a;
             }
+        }
             return PP;
-        }
-        if (b < 0){
-            for (int i = 0; i > b ; i--) {
-                NP = 1 / a * a;
-            }
-        }
-        return NP;
+
     }
 
 }
